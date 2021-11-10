@@ -1,0 +1,54 @@
+{
+  "name": "test",
+  "description": "",
+  "keywords": [],
+  "version": "0.0.1",
+  "author": "Maxim Pavlenko",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxert"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& webpack --mode development",
+    "dev:watch": "set NODE_ENV=development&& webpack --mode development --watch",
+    "build": "set NODE_ENV=production&& webpack -p",
+    "prod": "npm run build",
+    "start": "set NODE_ENV=development&& webpack-dev-server --mode development --open",
+    "watch": "npm run dev:watch",
+    "lint": "eslint src/scripts/*.js",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.10.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "dotenv-webpack": "^7.0.3",
+    "eslint": "^7.3.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "5",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "include-media": "^1.4.10",
+    "swiper": "^7.0.9"
+  }
+}
